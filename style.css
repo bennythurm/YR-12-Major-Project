@@ -1,3 +1,15 @@
+a {
+    text-decoration: none;
+    color: white;  /* Ensure links are white */
+}
+main {
+    min-height: 40vh;  /* Ensures main section takes up enough space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,10 +17,20 @@ body {
     text-align: center;
 }
 
+
+.header-logo {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 80px;  /* Adjust size as needed */
+    height: auto;
+}
+
 header {
     background-color: #f99e1a;
     color: white;
     padding: 20px;
+    
 }
 
 nav ul {
@@ -25,14 +47,32 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
 }
-
+.text-content {
+    width: 50%;
+    font-size: 18px;
+}
+.hero_header {
+    font-size: 100px;
+    margin-left: -310px;
+    margin-top : -25px;
+}
+.hero_text {
+    font-size: 25px;
+    margin-top: -80px ;
+    margin-left: -550px
+}
+.image {
+    position: absolute;
+    left: 10px;
+    height: 200px;
+    width: 200px;
+}
 .box {
     width: 45%;
     padding: 20px;
