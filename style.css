@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: white;  /* Ensure links are white */
+    color: rgb(255, 255, 255);
 }
 main {
     min-height: 40vh;  /* Ensures main section takes up enough space */
@@ -65,7 +65,7 @@ nav ul li a {
 .hero_text {
     font-size: 25px;
     margin-top: -80px ;
-    margin-left: -550px
+
 }
 .image {
     position: absolute;
