@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overwatch Archive</title>
     <link rel="stylesheet" href="style.css">
-    <a href="index.html"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/2048px-Overwatch_circle_logo.svg.png" alt ="overwatch_logo" class = "header-logo">
 </head>
-<body>
+<body class="default font-medium">
 
     <header>
+        <a href="index.html">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/2048px-Overwatch_circle_logo.svg.png" alt ="overwatch_logo" class = "header-logo">
+        </a>
         <h1>Overwatch Archive</h1>
         <nav>
             <ul>
@@ -18,6 +20,24 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+                <!-- DROPDOWNS -->
+    <div class="header-controls"> 
+        <label for="themeSelector">Color Mode:</label>
+        <select id="themeSelector">
+            <option value="default">Default</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="tritanopia">Tritanopia</option>
+        </select>
+
+        <label for="fontSelector">Font Size:</label>
+        <select id="fontSelector">
+            <option value="font-small">Small</option>
+            <option value="font-medium" selected>Medium</option>
+            <option value="font-large">Large</option>
+        </select>
+    </div>
+
     </header>
 
     <main>
@@ -49,5 +69,18 @@
     <footer>
         <p>© 2024 My Website</p>
     </footer>
+    <script>
+        // COLOR MODE
+        document.getElementById('themeSelector').addEventListener('change', function() {
+            document.body.classList.remove('default', 'deuteranopia', 'protanopia', 'tritanopia');
+            document.body.classList.add(this.value);
+        });
+    
+        // FONT SIZE
+        document.getElementById('fontSelector').addEventListener('change', function() {
+            document.body.classList.remove('font-small', 'font-medium', 'font-large');
+            document.body.classList.add(this.value);
+        });
+    </script>
 </body>
 </html>
